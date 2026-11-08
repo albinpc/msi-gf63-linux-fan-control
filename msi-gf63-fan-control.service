@@ -1,0 +1,16 @@
+[Unit]
+Description=MSI GF63 Thin 11SC Automatic Fan Controller
+After=multi-user.target
+
+[Service]
+Type=simple
+EnvironmentFile=-/etc/default/msi-gf63-fan-control
+ExecStart=/usr/local/sbin/msi-gf63-fan-control
+Restart=on-failure
+RestartSec=5
+
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

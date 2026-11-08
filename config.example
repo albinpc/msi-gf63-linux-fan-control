@@ -1,0 +1,37 @@
+
+# MSI GF63 Thin 11SC / MS-16R6
+# Automatic fan controller configuration
+
+CPU_50=60
+GPU_50=60
+
+CPU_75=70
+GPU_75=70
+
+CPU_90=75
+GPU_90=72
+
+CPU_100=80
+GPU_100=75
+
+CPU_100_DOWN=77
+GPU_100_DOWN=72
+
+CPU_90_DOWN=72
+GPU_90_DOWN=68
+
+CPU_75_DOWN=65
+GPU_75_DOWN=65
+
+CPU_AUTO=45
+GPU_AUTO=45
+
+POLL_SECONDS=5
+
+EC_HELPER=/usr/local/bin/ec_helper
+
+EXPECTED_PRODUCT="GF63 Thin 11SC"
+EXPECTED_BOARD="MS-16R6"
+
+# Leave disabled unless the EC layout has been independently verified.
+ALLOW_UNTESTED=0
